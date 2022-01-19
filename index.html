@@ -69,7 +69,7 @@
             </div>
             <nav class="gnb">
                 <div class="gnb_wrap">
-                    <ul class="grade1">
+                    <ul class="grade1" id="first">
                         <li>
                             <a href="">정보공개</a>
                             <ul class="grade2">
@@ -401,7 +401,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="">품질/서비스(이미지탭)</a>
+                            <a href="">품질/서비스</a>
                             <ul class="grade2">
                                 <li>
                                     <a href="">2차의1</a>
@@ -456,7 +456,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="">사이트맵(클릭탭)</a>
+                            <a href="">사이트맵</a>
                             <ul class="grade2">
                                 <li>
                                     <a href="">2차의1</a>
@@ -723,10 +723,14 @@
                     <div class="inform">
                         <div class="inform_menu">
                             <input type="radio" name="ra1" class="ra_item" id="ra1" checked>
-                            <input type="radio" name="ra1" class="ra_item" id="ra2">
+                            <input type="radio" name="ra2" class="ra_item" id="ra2">
+                            <ul class="inform_category_menu">
+                                <li class="item1"><label for="ra1">공지사항</label></li>
+                                <li class="item2"><label for="ra2">채용정보</label></li>
+                                <li class="more_item"><a href="">더보기</a></li>
+                            </ul>
                             <ul class="menubar">
-                                <li>
-                                    <a href="">공지사항</a>
+                                <li id="menubar_item1">
                                     <ul class="board_tit">
                                         <li><img src="./ico/ico_inquick03.png" alt="게시판사진">야생동물 보호시설 운영방침<span class="regdate">2021-01-04</span></li>
                                         <li><img src="./ico/ico_inquick03.png" alt="게시판사진">요소수 정보공개<span class="regdate">2021-02-11</span></li>
@@ -734,8 +738,7 @@
                                         <li><img src="./ico/ico_inquick03.png" alt="게시판사진">세계 물의날 기념행사 공고안내<span class="regdate">2021-12-01</span></li>
                                     </ul>
                                 </li>
-                                <li>
-                                    <a href="">채용공고</a>
+                                <li id="menubar_item2">
                                     <ul class="board_tit">
                                         <li><img src="./ico/ico_inquick03.png" alt="게시판사진">환경부 기획재정담당관실 1명 채용 공고<span class="regdate">2021-01-04</span></li>
                                         <li><img src="./ico/ico_inquick03.png" alt="게시판사진">물관리위원회 전문연구원 채용공고<span class="regdate">2021-01-04</span></li>
@@ -748,8 +751,15 @@
                     </div>
                     <div class="inform">
                         <div class="inform_menu">
+                            <input type="radio" name="ra3" class="ra_item" id="ra3" checked>
+                            <input type="radio" name="ra4" class="ra_item" id="ra4">
+                            <ul class="inform_category_menu">
+                                <li class="item1"><label for="ra3">공지사항</label></li>
+                                <li class="item2"><label for="ra4">채용정보</label></li>
+                                <li class="more_item"><a href="">더보기</a></li>
+                            </ul>
                             <ul class="menubar">
-                                <li>
+                                <li id="menubar_item3">
                                     <a href="">보도자료</a>
                                     <ul class="board_tit">
                                         <li><img src="./ico/ico_inquick03.png" alt="게시판사진">환경부 기획재정담당관실 1명 채용 공고<span class="regdate">2021-01-04</span></li>
@@ -758,7 +768,7 @@
                                         <li><img src="./ico/ico_inquick03.png" alt="게시판사진">자원재활용부 채용 공고<span class="regdate">2021-01-04</span></li>
                                     </ul>
                                 </li>
-                                <li>
+                                <li id="menubar_item4">
                                     <a href="">입찰구매</a>
                                     <ul class="board_tit">
                                         <li><img src="./ico/ico_inquick03.png" alt="게시판사진">환경부 기획재정담당관실 1명 채용 공고<span class="regdate">2021-01-04</span></li>
@@ -829,7 +839,7 @@
                     <div class="copyright">
                         <p>
                             - 본 누리집의 내용은 저작권법에 의해 보호를 받는 저작물로서, 
-                            이에 대한 무단 복제 및 배포를 원칙적으로 금하며 누리집에 게재된 이메일 주소의 수집을 거부합니다.
+                            이에 대한 무단 복제 및 배포를 금하며 누리집에 게재된 이메일 주소의 수집을 거부합니다.
                             <br>이를 위반 시 관련법에 의해 처벌됨을 알려드립니다.
                         </p>
                         <p>
