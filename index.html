@@ -43,7 +43,21 @@
     gtag('config', 'UA-216606852-1');
     </script>
 <style>
-    
+    /*figure_vs*/
+    .figure_vs {margin:0 auto;}
+    .img_box {width:400%; margin-top:10px;}
+    .img_box li {position:relative; float:left; }
+    /*multiple_content*/
+    .multiple_content {width: 1200px; height:100px; margin: 0 auto; position: relative;}
+    .sns_bar {position:relative; float:left; margin:5px 5px; width:40%; height:100%;}
+    .sns_logo li {float:left; margin-left:40px; margin-top:25px;}
+    .linklist {position:relative; float:left; margin:5px 5px; width:55%; height:100%;}
+    .national {float:left; margin-left:40px; margin-top:5px;}
+    .national img {margin-top:10px; float:left;}
+    .national a {margin-top:15px; display:block; background-color:rgb(248, 241, 243); height:50px; width:250px; font-size:20px;
+        margin-left: 20px; text-align:center; color:black; text-indent:-10px; line-height:45px;}
+    .ref_cite_list {margin-top:20px; float:right; }
+    .ref_cite_list_opt { height: 50px; width:250px; text-indent:10px; font-size:20px;}
 </style>
 </head>
 
@@ -521,43 +535,27 @@
                         <li>
                             <a href="">
                                 <img src="./img/bg_main_visual.jpg" class="vs_img" alt="메인이미지1">
-                                <div class="figure_tit">
-                                    <p class="vs_tit">환경부에 오신 여러분을 환영합니다.</p>
-                                    <p class="sub_tit">어서오세요</p>
-                                </div>
                             </a>
                         </li>
                         <li>
                             <a href="">
                                 <img src="./img/bg_main_visual.jpg" class="vs_img" alt="메인이미지1">
-                                <div class="figure_tit">
-                                    <p class="vs_tit">미세먼지 저감화 대책 안내</p>
-                                    <p class="sub_tit">맑은 하늘 대한민국</p>
-                                </div>
                             </a>
                         </li>
                         <li>
                             <a href="">
                                 <img src="./img/bg_main_visual.jpg" class="vs_img" alt="메인이미지1">
-                                <div class="figure_tit">
-                                    <p class="vs_tit">신재생에너지 정책 안내</p>
-                                    <p class="sub_tit">신재생에너지로 만드는 밝은 미래</p>
-                                </div>
                             </a>
                         </li>
                         <li>
                             <a href="">
                                 <img src="./img/bg_main_visual.jpg" class="vs_img" alt="메인이미지1">
-                                <div class="figure_tit">
-                                    <p class="vs_tit">탄소중립 그린도시</p>
-                                    <p class="sub_tit">환경부가 앞장섭니다</p>
-                                </div>
                             </a>
                         </li>
                     </ul>
                     <ul class="btn_box1">
-                        <li><button class="vs_btn_prev"></button></li>
-                        <li><button class="vs_btn_next"></button></li>
+                        <li><button class="vs_btn_prev">이전</button></li>
+                        <li><button class="vs_btn_next">다음</button></li>
                     </ul>
                     <ul class="btn_box2">
                         <li><button class="btn1"></button></li>
@@ -732,18 +730,50 @@
                             <ul class="menubar">
                                 <li id="menubar_item1">
                                     <ul class="board_tit">
-                                        <li><img src="./ico/ico_inquick03.png" alt="게시판사진">야생동물 보호시설 운영방침<span class="regdate">2021-01-04</span></li>
-                                        <li><img src="./ico/ico_inquick03.png" alt="게시판사진">요소수 정보공개<span class="regdate">2021-02-11</span></li>
-                                        <li><img src="./ico/ico_inquick03.png" alt="게시판사진">영산강 물관리종합계획<span class="regdate">2021-11-03</span></li>
-                                        <li><img src="./ico/ico_inquick03.png" alt="게시판사진">세계 물의날 기념행사 공고안내<span class="regdate">2021-12-01</span></li>
+                                        <li>
+                                            <img src="./ico/ico_inquick03.png" alt="게시판사진">
+                                            <a href="">야생동물 보호시설 운영방침</a>
+                                            <span class="regdate">2021-01-04</span>
+                                        </li>
+                                        <li>
+                                            <img src="./ico/ico_inquick03.png" alt="게시판사진">
+                                            <a href="">요소수 정보공개</a>
+                                            <span class="regdate">2021-02-11</span>
+                                        </li>
+                                        <li>
+                                            <img src="./ico/ico_inquick03.png" alt="게시판사진">
+                                            <a href="">영산강 물관리종합계획</a>
+                                            <span class="regdate">2021-11-03</span>
+                                        </li>
+                                        <li>
+                                            <img src="./ico/ico_inquick03.png" alt="게시판사진">
+                                            <a href="">세계 물의날 기념행사 공고안내</a>
+                                            <span class="regdate">2021-12-01</span>
+                                        </li>
                                     </ul>
                                 </li>
                                 <li id="menubar_item2">
                                     <ul class="board_tit">
-                                        <li><img src="./ico/ico_inquick03.png" alt="게시판사진">환경부 기획재정담당관실 1명 채용 공고<span class="regdate">2021-01-04</span></li>
-                                        <li><img src="./ico/ico_inquick03.png" alt="게시판사진">물관리위원회 전문연구원 채용공고<span class="regdate">2021-01-04</span></li>
-                                        <li><img src="./ico/ico_inquick03.png" alt="게시판사진">환경부 기획재정담당실 채용 완료<span class="regdate">2021-01-04</span></li>
-                                        <li><img src="./ico/ico_inquick03.png" alt="게시판사진">자원재활용부 채용 공고<span class="regdate">2021-01-04</span></li>
+                                        <li>
+                                            <img src="./ico/ico_inquick03.png" alt="게시판사진">
+                                            <a href="">환경부 기획재정담당관실 1명 채용 공고</a>
+                                            <span class="regdate">2021-01-04</span>
+                                        </li>
+                                        <li>
+                                            <img src="./ico/ico_inquick03.png" alt="게시판사진">
+                                            <a href="">물관리위원회 전문연구원 채용공고</a>
+                                            <span class="regdate">2021-01-04</span>
+                                        </li>
+                                        <li>
+                                            <img src="./ico/ico_inquick03.png" alt="게시판사진">
+                                            <a href="">환경부 기획재정담당실 채용 완료</a>
+                                            <span class="regdate">2021-01-04</span>
+                                        </li>
+                                        <li>
+                                            <img src="./ico/ico_inquick03.png" alt="게시판사진">
+                                            <a href="">자원재활용부 채용 공고</a>
+                                            <span class="regdate">2021-01-04</span>
+                                        </li>
                                     </ul>
                                 </li>
                             </ul>
@@ -760,21 +790,51 @@
                             </ul>
                             <ul class="menubar">
                                 <li id="menubar_item3">
-                                    <a href="">보도자료</a>
                                     <ul class="board_tit">
-                                        <li><img src="./ico/ico_inquick03.png" alt="게시판사진">환경부 기획재정담당관실 1명 채용 공고<span class="regdate">2021-01-04</span></li>
-                                        <li><img src="./ico/ico_inquick03.png" alt="게시판사진">물관리위원회 전문연구원 채용공고<span class="regdate">2021-01-04</span></li>
-                                        <li><img src="./ico/ico_inquick03.png" alt="게시판사진">환경부 기획재정담당실 채용 완료<span class="regdate">2021-01-04</span></li>
-                                        <li><img src="./ico/ico_inquick03.png" alt="게시판사진">자원재활용부 채용 공고<span class="regdate">2021-01-04</span></li>
+                                        <li>
+                                            <img src="./ico/ico_inquick03.png" alt="게시판사진">
+                                            <a href="">환경부 기획재정담당관실 1명 채용 공고</a>
+                                            <span class="regdate">2021-01-04</span>
+                                        </li>
+                                        <li>
+                                            <img src="./ico/ico_inquick03.png" alt="게시판사진">
+                                            <a href="">물관리위원회 전문연구원 채용공고</a>
+                                            <span class="regdate">2021-01-04</span>
+                                        </li>
+                                        <li>
+                                            <img src="./ico/ico_inquick03.png" alt="게시판사진">
+                                            <a href="">환경부 기획재정담당실 채용 완료</a>
+                                            <span class="regdate">2021-01-04</span>
+                                        </li>
+                                        <li>
+                                            <img src="./ico/ico_inquick03.png" alt="게시판사진">
+                                            <a href="">자원재활용부 채용 공고</a>
+                                            <span class="regdate">2021-01-04</span>
+                                        </li>
                                     </ul>
                                 </li>
                                 <li id="menubar_item4">
-                                    <a href="">입찰구매</a>
                                     <ul class="board_tit">
-                                        <li><img src="./ico/ico_inquick03.png" alt="게시판사진">환경부 기획재정담당관실 1명 채용 공고<span class="regdate">2021-01-04</span></li>
-                                        <li><img src="./ico/ico_inquick03.png" alt="게시판사진">물관리위원회 전문연구원 채용공고<span class="regdate">2021-01-04</span></li>
-                                        <li><img src="./ico/ico_inquick03.png" alt="게시판사진">환경부 기획재정담당실 채용 완료<span class="regdate">2021-01-04</span></li>
-                                        <li><img src="./ico/ico_inquick03.png" alt="게시판사진">자원재활용부 채용 공고<span class="regdate">2021-01-04</span></li>
+                                        <li>
+                                            <img src="./ico/ico_inquick03.png" alt="게시판사진">
+                                            <a href="">환경부 기획재정담당관실 1명 채용 공고</a>
+                                            <span class="regdate">2021-01-04</span>
+                                        </li>
+                                        <li>
+                                            <img src="./ico/ico_inquick03.png" alt="게시판사진">
+                                            <a href="">물관리위원회 전문연구원 채용공고</a>
+                                            <span class="regdate">2021-01-04</span>
+                                        </li>
+                                        <li>
+                                            <img src="./ico/ico_inquick03.png" alt="게시판사진">
+                                            <a href="">환경부 기획재정담당실 채용 완료</a>
+                                            <span class="regdate">2021-01-04</span>
+                                        </li>
+                                        <li>
+                                            <img src="./ico/ico_inquick03.png" alt="게시판사진">
+                                            <a href="">자원재활용부 채용 공고</a>
+                                            <span class="regdate">2021-01-04</span>
+                                        </li>
                                     </ul>
                                 </li>
                             </ul>
@@ -806,7 +866,7 @@
                         </ul>
                     </div>
                     <div class="linklist">
-                        <div class="natonal">
+                        <div class="national">
                             <img src="./ico/ico_fourlink04.png" alt="지도 마커">
                             <a href="">지역본부 홈페이지</a>
                         </div>
