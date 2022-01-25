@@ -44,9 +44,37 @@
     </script>
 <style>
     /*figure_vs*/
-    .figure_vs {margin:0 auto;}
-    .img_box {width:400%; margin-top:10px;}
+    .figure_vs {margin:0 auto; }
+    .img_box {width:500%; margin-top:10px; overflow-x: hidden; position:relative;}
     .img_box li {position:relative; float:left; }
+    .btn_box1 {position:absolute;}
+    .btn_box2 {position:absolute;}
+
+    .vs_btn_prev {text-indent:-10000px;}
+    .vs_btn_next {text-indent:-10000px;}
+    /*ico_menu*/
+    .ico_menu {width:100%;}
+    .ico_list {margin-top:20px; width:100%; height:10vw;}
+    .ico_list li {float:left; padding-left:130px;} 
+    /*sub_slide*/
+    .sub_slide {clear: both; }
+    .sub_img_box {width:500%; overflow-x: hidden;}
+    .sub_img_box li {float:left;}
+    /*informal_box*/
+    .ra_item { display:none; }
+    .menubar { clear:both; }
+    .menubar {  width: 400px; height: 200px; }
+    #ra1:checked ~ .menubar .noti.item1 { display:block; }
+    #ra2:checked ~ .menubar .noti.item2 { display:block; }
+    .informal_box {width:100%; height:20vw; padding-top:50px;}
+    .inform {float:left; margin-left:150px;}
+    .inform_category_menu li { float:left; width: 100px; text-align: center; height: 48px; line-height: 48px;
+     cursor: pointer; }
+    .inform_category_menu li.more_item { float:right;  font-size:14px; font-weight: bold;  }
+    .inform_category_menu li label { color:#000; font-weight: normal; cursor: pointer; }
+    .inform_menu {width:400px;}
+
+    .board_tit li {float:left;}
     /*multiple_content*/
     .multiple_content {width: 1200px; height:100px; margin: 0 auto; position: relative;}
     .sns_bar {position:relative; float:left; margin:5px 5px; width:40%; height:100%;}
@@ -58,6 +86,37 @@
         margin-left: 20px; text-align:center; color:black; text-indent:-10px; line-height:45px;}
     .ref_cite_list {margin-top:20px; float:right; }
     .ref_cite_list_opt { height: 50px; width:250px; text-indent:10px; font-size:20px;}
+
+    /*popup*/
+     /* .pop_wrap { width:100vw; height:100vh; 
+    background:rgba(0,0,0,0.8); position:fixed; z-index: 99999;
+    left: 0; top: 0; display:none; }  */
+    .pop_wrap { width:100vw; height:100vh; 
+    background:rgba(0,0,0,0.8); position:fixed; z-index: 99999;
+    left: 0; top: 0;  } 
+    /* #ck_item1:checked ~ .pop_wrap { display:block; }  */
+    #ck_item1 { display:none; }
+    .pop { clear:both; width: 600px; height: 460px; 
+    margin:100px auto; position:relative; }
+    .pop_tit_box { clear:both; height: 42px; 
+    background-color: deepskyblue; }
+    .pop_tit { color:#fff; text-indent:30px; 
+    font-size:20px; line-height: 42px; }
+    .close_btn { display:block; width: 40px; height: 40px; line-height: 40px; 
+    text-align:center; color:#fff; position:absolute; right:0; top:0; 
+    border:1px solid #f1f1f1; cursor:pointer; color:red; font-size:18pt;}
+    .close_btn:hover {background: black; color:white;}
+    .pop_con_box { clear:both; background-color:#fff; 
+    padding-top:20px; padding-bottom: 20px; }
+    .pop_con_box a {text-align: center;}
+    .pop_img { display:block; margin:30px auto; }
+    .pop_com { width: 500px; padding: 20px 0px; margin: 0 auto; 
+        font-family: fantasy, sans-serif; color: #87162a; text-align:center;}
+    .inner_btn { display:block; width:90px; margin:10px auto; 
+    background-color: #333; color:#fff; text-align:center; 
+    line-height: 36px; cursor:pointer; }
+
+
 </style>
 </head>
 
@@ -598,7 +657,7 @@
                             <div class="ico"><a href=""><img src="./ico/main_icon01.png" alt="찾아오시는 길"></a></div>
                             <div class="ico_desc">
                                 <a href="">
-                                    <p class="tit">찾아오시는 길</p>
+                                    <p class="tit">오시는길</p>
                                     <p class="sub_tit">more &gt;</p>
                                 </a>
                             </div>
@@ -728,7 +787,7 @@
                                 <li class="more_item"><a href="">더보기</a></li>
                             </ul>
                             <ul class="menubar">
-                                <li id="menubar_item1">
+                                <li class="hide_menu" id="menubar_item1">
                                     <ul class="board_tit">
                                         <li>
                                             <img src="./ico/ico_inquick03.png" alt="게시판사진">
@@ -752,7 +811,7 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li id="menubar_item2">
+                                <li class="hide_menu" id="menubar_item2">
                                     <ul class="board_tit">
                                         <li>
                                             <img src="./ico/ico_inquick03.png" alt="게시판사진">
@@ -789,7 +848,7 @@
                                 <li class="more_item"><a href="">더보기</a></li>
                             </ul>
                             <ul class="menubar">
-                                <li id="menubar_item3">
+                                <li class="hide_menu" id="menubar_item3">
                                     <ul class="board_tit">
                                         <li>
                                             <img src="./ico/ico_inquick03.png" alt="게시판사진">
@@ -813,7 +872,7 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li id="menubar_item4">
+                                <li class="hide_menu" id="menubar_item4">
                                     <ul class="board_tit">
                                         <li>
                                             <img src="./ico/ico_inquick03.png" alt="게시판사진">
@@ -912,6 +971,110 @@
                 </div>
             </div>
         </footer>
+        <input type="checkbox" id="ck_item1" checked>
+    <div class="pop_wrap" id="popup">
+        <section class="pop">
+            <div class="pop_tit_box">
+                <h3 class="pop_tit">안내</h3>
+                <!-- <label for="ck_item1" class="close_btn">X</label> -->
+                <button type="button" onclick="PopupHide();" class="close_btn">X</button>
+            </div>
+            <div class="pop_con_box">
+                
+                <p class="pop_com">GNB 메뉴와 페이지가 1개(index)인 점을 개선점에 포함시켜 주세요.</p>
+                <!-- <label for="ck_item1" class="inner_btn">닫기</label> -->
+                <button type="button" onclick="PopupHide();" class="inner_btn">닫기</button>
+                <a href="#" onclick="todaycloseWin()">오늘하루동안 열지않기</a>
+            </div>
+        </section>
+    </div>
+    <script>
+        function setCookie(name, value, expirehours) {
+            var todayDate = new Date();
+            todayDate.setHours(todayDate.getHours() + expirehours);
+            document.cookie = name + "=" + escape(value) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+        }
+    
+        function todaycloseWin() {
+            setCookie("ncookie", "done", 24);
+            document.getElementById('popup').style.display = "none";
+            PopupBgDisplay();
+        }
+    
+        $(document).ready(function () {
+            function textSplit(target) {
+                var input = "";
+                var txt = "";
+                var text = $(target).text();
+                for (i = 0; i <= text.length - 1; i++) {
+                    if (text.substr(i, 1) == " ") {
+                        input = " "
+                        txt += "<span>" + input + "</span>";
+                    } else if (text.substr(i, 1) == "|") {
+                        input = "<div></div>";
+                        txt += input;
+                    } else if (text.substr(i, 1) == "/" && opts.ignored.indexOf("/") == -1) {
+                        input = "<br>";
+                        txt += input;
+                    } else {
+                        input = text.substr(i, 1);
+                        txt += "<span>" + input + "</span>";
+                    }
+                }
+                $(target).html(txt);
+            }
+            textSplit('.textSplit');
+            $('.textSplit span').each(function (e) {
+                $(this)
+                    .delay(getRandomIntInclusive(500, 2200))
+                    .animate({
+                        'opacity': '1'
+                    }, 1500)
+            });
+            textSplit('.textSplit2');
+            $('.textSplit2 span').each(function (e) {
+                $(this)
+                    .delay(getRandomIntInclusive(500, 2200))
+                    .animate({
+                        'opacity': '1'
+                    }, 1500)
+            });
+            textSplit('.textSplit3');
+            $('.textSplit3 span').each(function (e) {
+                $(this)
+                    .delay(getRandomIntInclusive(500, 2200))
+                    .animate({
+                        'opacity': '1'
+                    }, 1500)
+            });
+    
+            function getRandomIntInclusive(min, max) {
+                return Math.floor(Math.random() * (max - min + 1)) + min;
+            }
+        });
+    
+        cookiedata = document.cookie;
+        if (cookiedata.indexOf("ncookie=done") < 0) {
+            document.getElementById('popup').style.visibility = "visible";
+                $("body").css( "overflow", "hidden" );
+        } else {
+            document.getElementById('popup').style.display = "none";
+            $(".popupbg").hide();
+            $("body").css( "overflow", "auto" );
+        }
+    
+        function PopupHide() { //팝업창 지우기
+            $('#popup').hide();
+            PopupBgDisplay();
+        }
+    
+        function PopupBgDisplay() {
+            if ($("#popup").css("display") == "none") {
+                $(".popupbg").hide();
+                $("body").css( "overflow", "auto" );
+            }
+        }
+    </script>
     </div>
 </body>
 </html>
